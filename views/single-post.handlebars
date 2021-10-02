@@ -1,0 +1,23 @@
+<article class="post">
+    <div class="title">
+    </div>
+    <div class="meta">
+        {{post.vote_count}} point(s) by {{post.user.username}} on
+        {{dateFormat created_at}}
+        |
+        <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+    </div>
+    <form class="comment-form">
+        <div>
+            <textarea name="comment-body"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">add comment</button>
+        </div>
+    </form>
+
+    {{> comments post.comments}}
+</article>
+
+<script src="/js/comment.js"></script>
