@@ -3,8 +3,8 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const controllers = require('./controllers')
 const session = require('express-session')
-const hb = require('handlebars')
-const moment = require("moment");
+const helpers = require('./utils/helpers')
+const hbs = exphbs.create({ helpers });
 
 require('dotenv').config();
 
@@ -30,11 +30,6 @@ app.use(session(sess));
 // Setup handlebars
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
-
-hb.registerHelper('dateFormat', function (date, options) {
-    const formatToUse = (arguments[1] && arguments[1].hash && arguments[1].hash.format) || "MMMM Do, hh:mm A"
-    return moment(date).format(formatToUse);
-});
 
 // Use middleware
 app.use(express.static(path.join(__dirname, '/public')));

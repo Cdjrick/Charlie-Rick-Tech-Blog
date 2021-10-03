@@ -12,17 +12,20 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/dashboard">Charlie's Tech Blog</a>
+        <a href="/home">Charlie's Tech Blog</a>
       </h1>
       <nav>
+        {{#if loggedIn}}
         <button id='logoutBtn'>logout</button>
+        <a class='your-posts' href='/dashboard'>Your Posts</a>
+        {{/if}}
       </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting!
+      
     </footer>
   </div>
 <script src='/js/logout.js'></script>
