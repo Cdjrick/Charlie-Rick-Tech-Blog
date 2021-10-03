@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Just Tech News</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/home">Charlie's Tech Blog</a>
+        <a href="/home" class="header-logo">Charlie's Tech Blog</a>
       </h1>
-      <nav>
+      <nav class="nav-links">
         {{#if loggedIn}}
+        <a class='your-dashboard' href='/dashboard'>Your Dashboard</a>
         <button id='logoutBtn'>logout</button>
-        <a class='your-posts' href='/dashboard'>Your Posts</a>
         {{/if}}
       </nav>
     </header>

@@ -1,0 +1,200 @@
+a {
+    color: black
+}
+
+a:visited {
+    color: black;
+}
+
+button {
+    background-color: #e7e7e7; color: black;
+    border: 0.5px solid black;
+    color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* --------------- Header --------------- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    margin: auto 20px;
+    text-decoration: underline;
+}
+
+.nav-links {
+    margin: auto 20px;
+}
+
+.your-dashboard {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#logoutBtn {
+    margin-left: 50px;
+}
+
+/* --------------- Login/Signup --------------- */
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+input[type=text]:focus {
+    border: 1px solid #555;
+}
+
+label {
+    font-size: 18px;
+}
+
+#email-login {
+    margin-bottom: 20px
+}
+
+.signup-p {
+    font-size: 18px;
+}
+
+.signup-link, .signup-link:visited {
+    color: blue;
+}
+
+#signup-btn {
+    margin-top: 20px;
+}
+
+/* --------------- Homepage/Dashboard Post Card --------------- */
+
+.post-list {
+    padding-inline-start: 0;
+}
+
+.homepage-post {
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: #f7f7f7f7;
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post-title {
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.post-text {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.meta {
+    margin: 5px;
+}
+
+/* --------------- Dashboard --------------- */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+.dashboard-posts {
+    padding-inline-start: 0;
+}
+
+.dashboard-meta {
+    margin: 20px 5px 10px 5px;
+}
+
+.edit-link {
+    font-size: 18px;
+    margin: 5px;
+}
+
+/* --------------- Single Page Posts/Comments --------------- */
+
+.single-post-title {
+    margin: 25px;
+    text-decoration: underline;
+}
+
+.single-post-text {
+    margin: 25px;
+}
+
+.single-post-meta {
+    margin: 30px 0;
+}
+
+.comments {
+    margin: 20px 0;
+}
+
+.comment {
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #f8f8f8;
+}
+
+.comment-textarea {
+    width: 100%;
+    height: 75px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.comment-meta {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#post-title {
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+
+    margin-bottom: 20px;
+}
+
+/* --------------- Edit Post Page --------------- */
+
+.edit-post-btn-div {
+    margin: 15px 0 50px 0;
+}
