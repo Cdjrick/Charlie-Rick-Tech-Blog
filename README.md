@@ -6,3 +6,6 @@ Use NPM install to install all the nessisary packages.
 Packages include MYSQL2, Sequelize, bcrypt, dotenv, express, connect-session-sequelize, express-sessions, and handlebars
 
 Create a .env file with DB_NAME = (tech_blog), DB_USER = (root), DB_PW = (your sql password), replace (your sql password) with your sql server password in order to run the program locally.
+
+Link to github repo - https://github.com/Cdjrick/Charlie-Rick-Tech-Blog
+Link to deployed application - https://charlie-rick-tech-blog.herokuapp.com/
