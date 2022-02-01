@@ -1,11 +1,7 @@
 <li>
     <article class="homepage-post">
         <div class="post-title">
-            {{#if loggedIn}}
             <h4><a href="/post/{{id}}">{{title}}</a></h4>
-            {{else}}
-            <h4><a href="/login">{{title}}</a></h4>
-            {{/if}}
         </div>
         <div class='post-text'>
             {{text}}
@@ -14,11 +10,7 @@
             by {{user.username}} on
             {{dateFormat created_at}}
             |
-            {{#if loggedIn}}
             <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
-            {{else}}
-            <a href="/login">{{comments.length}} comment(s)</a>
-            {{/if}}
         </div>
     </article>
 </li>

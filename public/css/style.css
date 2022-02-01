@@ -201,6 +201,13 @@ textarea {
     margin-bottom: 20px;
 }
 
+.loginComment {
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    padding: 25px;
+    font-weight: bold;
+}
+
 /* --------------- Edit Post Page --------------- */
 
 .edit-post-btn-div {
