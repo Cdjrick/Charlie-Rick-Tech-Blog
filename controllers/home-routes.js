@@ -2,7 +2,7 @@ const router = require('express').Router()
 const { Post, User, Comment } = require('../models')
 
 // Get Posts
-router.get('/home', (req, res) => {
+router.get('/', (req, res) => {
   console.log('======================')
     Post.findAll({
       attributes: [ 'id', 'title', 'text', 'created_at' ],
@@ -78,7 +78,7 @@ router.get('/post/:id', (req, res) => {
 
 router.get('/login', (req, res) => {
   if(req.session.loggedIn) {
-    res.redirect('/home')
+    res.redirect('/')
     return
   }
 
